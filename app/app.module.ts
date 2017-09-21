@@ -9,14 +9,14 @@ import NavbarComponent from './components/navbar/navbar';
 import ProductItemComponent from './components/product-item/product-item';
 import SearchComponent from './components/search/search';
 import StarsComponent from "./components/stars/stars";
-import {ProductService} from './services/product-service';
+import { ProductService } from './services/product-service';
 import HomeComponent from "./components/home/home";
 import ProductDetailComponent from "./components/product-detail/product-detail";
 
 @NgModule({
     imports: [BrowserModule, RouterModule.forRoot([
         {path: '', component: HomeComponent},
-        {path: 'products/:prodTitle', component: ProductDetailComponent}
+        {path: 'products/:productId', component: ProductDetailComponent}
     ])],
     declarations: [
         ApplicationComponent,
